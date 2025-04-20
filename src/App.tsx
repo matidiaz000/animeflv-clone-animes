@@ -1,8 +1,8 @@
-import Animes from './pages/Animes';
+import Anime from './pages/Anime';
 
 const App = () => {
   return (
-    <Animes />
+    <Anime />
   );
 };
 
