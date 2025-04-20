@@ -1,0 +1,27 @@
+{
+  "name": "animeflv-clone-animes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rsbuild build",
+    "check": "biome check --write",
+    "dev": "rsbuild dev --open",
+    "format": "biome format --write",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "@matidiaz000/animeflv-clone-library": "^0.0.9",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@module-federation/rsbuild-plugin": "^0.12.0",
+    "@rsbuild/core": "^1.3.1",
+    "@rsbuild/plugin-react": "^1.1.1",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "typescript": "^5.8.2"
+  }
+}
