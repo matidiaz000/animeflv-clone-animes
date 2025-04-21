@@ -15,5 +15,13 @@ export default createModuleFederationConfig({
       singleton: true,
       eager: true,
     },
+    'react-router-dom': {
+      singleton: true,
+      eager: true,
+    },
+    '@matidiaz000/animeflv-clone-library': {
+      singleton: true,
+      eager: true,
+    },
   },
 });
