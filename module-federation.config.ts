@@ -1,8 +1,9 @@
 import { createModuleFederationConfig } from '@module-federation/rsbuild-plugin';
 
 export default createModuleFederationConfig({
-  name: 'animes',
+  name: process.env.NAME,
   filename: "remoteEntry.js",
+  dts: false,
   exposes: {
     '.': './src/App.tsx',
   },

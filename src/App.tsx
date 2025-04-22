@@ -1,13 +1,8 @@
-import { Route, Routes } from "react-router-dom";
-import Anime from './pages/Anime';
-import Animes from './pages/Animes';
+import AppRoutes from "./routes";
 
 const App = () => {
   return (
-    <Routes>
-      <Route index element={<Animes />} path="/" />
-      <Route index element={<Anime />} path="/:name" />
-    </Routes>
+    <AppRoutes />
   );
 };
 
