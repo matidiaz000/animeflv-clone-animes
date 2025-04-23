@@ -8,13 +8,3 @@ export interface ICard {
   subtitle: string,
   link: string
 }
-
-export interface ISmallCard {
-  id: number,
-  img: string,
-  title: string,
-  subtitle: string,
-  link: string,
-  time: string,
-  likes: number
-}
