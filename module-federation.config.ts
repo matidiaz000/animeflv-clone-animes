@@ -24,5 +24,13 @@ export default createModuleFederationConfig({
       singleton: true,
       eager: true,
     },
+    '@apollo/client': {
+      singleton: true,
+      eager: true,
+    },
+    'graphql': {
+      singleton: true,
+      eager: true,
+    },
   },
 });
