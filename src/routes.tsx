@@ -4,7 +4,7 @@ import Animes from './pages/Animes';
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route index element={<Animes />} path=":category/:value" />
+      <Route index element={<Animes />} path="/:category/:value" />
     </Routes>
   );
 };
