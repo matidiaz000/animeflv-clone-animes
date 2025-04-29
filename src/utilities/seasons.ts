@@ -18,3 +18,5 @@ export const getSeason = (next?: boolean): ISeasons => {
 
   return season;
 }
+
+export const currentYear = new Date().getFullYear();
