@@ -4,8 +4,8 @@ import { useQuery } from "@apollo/client";
 import { GET_ANIME_LIST } from "../queries/animes.list";
 import { currentYear, getSeason } from "../utilities/seasons";
 import { useState } from "react";
-import { urls } from "../constant/urls";
-import { Format } from "../constant/format";
+import { urls } from "../constants/urls";
+import { Format } from "../constants/format";
 
 const Animes = () => {
   const { category } = useParams();
