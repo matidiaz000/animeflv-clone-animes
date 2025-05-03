@@ -18,6 +18,14 @@ const Animes = () => {
       page: currentPage,
       perPage: 18,
     }
+    if (category === urls[0].url) {
+      variables = {
+        season: getSeason(),
+        seasonYear: currentYear,
+        status: 'RELEASING',
+        ...variables
+      }
+    }
     if (category === urls[1].url) {
       variables = {
         season: getSeason(),
@@ -50,6 +58,12 @@ const Animes = () => {
     }
   };
 
+  const setSubtitle = (item: any): string => {
+    if (item.episodes > 1) return `${item.episodes} episodios`
+    else if (item.episodes === 1 && item.duration) return `${item.duration}m`
+    else return "Próximamente"
+  }
+
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
 
@@ -71,24 +85,24 @@ const Animes = () => {
               img={item.coverImage?.large}
               category={Format(item.format)}
               title={item.title?.userPreferred}
-              subtitle={`${item.episodes} episodios`}
-              link={item.id}
+              subtitle={setSubtitle(item)}
+              link={`/anime/${item.id}`}
             />
           </div>
-          )}
+        )}
       </section>
-      <section className="d-flex">
+      <section className="d-flex align-items-center mt-4">
         <Button
           disabled={currentPage === 1}
           variant="contained"
-          className="mx-auto mt-4"
+          className="mx-auto"
           onClick={() => loadMore(currentPage - 1)}
           color="primary"
         >Anterior</Button>
         <span>{currentPage} / {pageInfo?.lastPage}</span>
         <Button
           variant="contained"
-          className="mx-auto mt-4"
+          className="mx-auto"
           onClick={() => loadMore(currentPage + 1)}
           color="primary"
         >Siguiente</Button>

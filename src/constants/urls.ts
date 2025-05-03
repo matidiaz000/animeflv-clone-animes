@@ -7,7 +7,7 @@ interface IUrl {
 export const urls: IUrl[] = [
   {
     url: 'episodios-nuevos',
-    sort: 'ID_DESC',
+    sort: 'UPDATED_AT_DESC',
     text: 'Episodios nuevos'
   },
   {
