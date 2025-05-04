@@ -12,8 +12,8 @@ importers:
         specifier: 3.13.8
         version: 3.13.8(@types/react@19.1.2)(graphql@16.10.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@matidiaz000/animeflv-clone-library':
-        specifier: 0.0.16
-        version: 0.0.16(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: 0.0.37
+        version: 0.0.37(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       graphql:
         specifier: 16.10.0
         version: 16.10.0
@@ -262,8 +262,8 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@matidiaz000/animeflv-clone-library@0.0.16':
-    resolution: {integrity: sha512-10NSXVSw9lcJyCT5IaN+FKppuqsrddJ2gjbbHr2SswrWbOIgl2N80rTMWT8oiAbTjlXuWUmyApBdWFscFKxPSA==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-library/0.0.16/13be1164deaa00337771835d94bc6b7db34743a1}
+  '@matidiaz000/animeflv-clone-library@0.0.37':
+    resolution: {integrity: sha512-7HgdE7TcdvPeyQnk0wQDyzrzkWc4UzWpYhKRB300nBn8qHrhZxdIZNFJte0/7m0Y7LTTLEaPiE45+jicGSizIQ==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-library/0.0.37/a3066284a5b6b07abc5c2dd9d45532d8eb271aed}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -1260,7 +1260,7 @@ snapshots:
     dependencies:
       graphql: 16.10.0
 
-  '@matidiaz000/animeflv-clone-library@0.0.16(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@matidiaz000/animeflv-clone-library@0.0.37(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
