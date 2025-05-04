@@ -68,7 +68,7 @@ const Animes = () => {
   if (error) return <p>Error : {error.message}</p>;
 
   return (
-    <article className="container pb-5">
+    <article className="container-md pb-5">
       <header className="d-flex justify-content-between align-items-center mt-5">
         <h2>{urls.find(d => d.url === category)?.text}</h2>
         {/* 
@@ -80,7 +80,7 @@ const Animes = () => {
       </header>
       <section className="row my-n4 py-4">
         {media?.map((item: any) => 
-          <div className="col-2 my-4" key={`animesList-${item.id}`}>
+          <div className="col-4 col-sm-3 col-lg-2 my-4" key={`animesList-${item.id}`}>
             <Card
               img={item.coverImage?.large}
               category={Format(item.format)}
